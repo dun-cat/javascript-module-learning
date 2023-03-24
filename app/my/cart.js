@@ -1,6 +1,9 @@
-define(function (require, exports) {
+define(function (require, exports, module) {
   let cart = [];
-  exports.add = function (goods) {
-    cart.push(goods)
+  module.exports = {
+    add: function (goods) {
+      console.log("goods added!")
+      cart.push(goods)
+    }
   }
 });
