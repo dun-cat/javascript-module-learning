@@ -1,4 +1,4 @@
-import greeting, { title, myObj } from "./modules/a.js";
+import greeting, { title, myObj } from "./modules/a.js?a=1&b=2";
 
 greeting();
 
@@ -16,3 +16,6 @@ import * as order from './modules/b.js';
 
 // console.log(id)
 console.log(order.default)
+
+
+console.log(import.meta)
